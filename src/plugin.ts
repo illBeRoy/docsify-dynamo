@@ -21,10 +21,13 @@ export function docsifyDynamo({ cache = true }: DocsifyDynamoOpts = {}) {
     }
   }
 
-  const fetchEjsFile = memoize((file: string) => {
-    return fetch(file)
-      .then((res) => res.text())
-      .catch(() => null);
+  const fetchEjsFile = memoize(async (file: string) => {
+    const response = await fetch(file);
+    if (response.status >= 200 && response.status < 300) {
+      return response.text();
+    } else {
+      return null;
+    }
   });
 
   const renderEjs = memoize(
