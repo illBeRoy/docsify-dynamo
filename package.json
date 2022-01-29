@@ -8,7 +8,6 @@
   "private": false,
   "scripts": {
     "build": "parcel build",
-    "test": "jest",
     "lint": "eslint .",
     "posttest": "yarn lint",
     "prerelease": "rm -rf dist && yarn build",
@@ -44,7 +43,6 @@
     "@types/ejs": "^3.1.0",
     "@types/memoizee": "^0.4.7",
     "eslint-config-typescript-prettier": "illberoy/eslint-typescript-prettier",
-    "nock": "^13.2.2",
     "np": "^7.6.0",
     "parcel": "^2.2.1",
     "prettier": "^2.5.1",
