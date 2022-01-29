@@ -11,7 +11,7 @@
     "test": "jest",
     "lint": "eslint .",
     "posttest": "yarn lint",
-    "prerelease": "rm -rf dist && yarn build && yarn release",
+    "prerelease": "rm -rf dist && yarn build",
     "release": "np"
   },
   "main": "dist/cjs/index.js",
