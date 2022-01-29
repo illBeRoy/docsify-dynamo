@@ -45,7 +45,7 @@ Cat fact of the day:
 ### UMD
 The most simple way is to use Dynamo's UMD bundle:
 ```html
-<script src="https://unpkg.com/docsify-dynamo/umd/dynamo.min.js"></script>
+<script src="https://unpkg.com/docsify-dynamo/dist/umd/dynamo.min.js"></script>
 ```
 
 And then just use the plugin that was created on the window with docsify:
