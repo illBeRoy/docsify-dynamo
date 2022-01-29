@@ -1,6 +1,6 @@
 {
   "name": "docsify-dynamo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "docsify plugin for creating dynamic documentation sites",
   "repository": "git@github.com:illBeRoy/docsify-dynamo.git",
   "author": "Roy Sommer",
