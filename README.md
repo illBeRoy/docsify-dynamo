@@ -118,3 +118,11 @@ window.$docsify = {
   plugins: [DocsifyDynamo({ cache: false })]
 }
 ```
+
+## Known Issues
+### Getting "Not Found" Instead of the Dynamic Page
+If, instead of your rendered `ejs` file you are getting the 404 page, this is due to the fact that docsify currently terminates any rendering process upon not finding the requested file.
+
+In order to circumvent that, you need to configure your static server to return `200` even when files are not found.
+
+There is an open feature request for allowing plugins to handle "virtual" routes, you can thumbs up here: https://github.com/docsifyjs/docsify/issues/1737
